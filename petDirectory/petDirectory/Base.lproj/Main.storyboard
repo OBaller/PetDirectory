@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="82r-EF-HhE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cats I Like-->
+        <scene sceneID="cIJ-j4-SXp">
+            <objects>
+                <viewController id="ynu-gs-5Ce" customClass="FavouriteCatsViewController" customModule="petDirectory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FZK-GT-9DV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rjv-8B-Hqv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cats I Like" image="Vector-1" id="nrC-Ob-AKe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jo4-HD-g30" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="402"/>
+        </scene>
+        <!--All Cats-->
+        <scene sceneID="Cq9-le-BpO">
+            <objects>
+                <viewController id="54y-B0-dkb" customClass="AllCatsViewController" customModule="petDirectory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t32-ok-zmM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Cats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDc-kF-32c">
+                                <rect key="frame" x="20" y="80" width="71" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="HK4-0n-7t9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfP-5G-Jjs">
+                                <rect key="frame" x="0.0" y="112" width="414" height="701"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QyK-6t-Hcf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NfP-5G-Jjs" firstAttribute="trailing" secondItem="QyK-6t-Hcf" secondAttribute="trailing" id="GiA-u9-lSM"/>
+                            <constraint firstItem="NfP-5G-Jjs" firstAttribute="leading" secondItem="QyK-6t-Hcf" secondAttribute="leading" id="J9l-wt-3Wz"/>
+                            <constraint firstItem="tDc-kF-32c" firstAttribute="leading" secondItem="QyK-6t-Hcf" secondAttribute="leading" constant="20" id="Jnx-7O-fBS"/>
+                            <constraint firstItem="tDc-kF-32c" firstAttribute="top" secondItem="QyK-6t-Hcf" secondAttribute="top" constant="36" id="dqn-4I-La7"/>
+                            <constraint firstItem="NfP-5G-Jjs" firstAttribute="top" secondItem="tDc-kF-32c" secondAttribute="bottom" constant="8" id="hep-Zg-jvA"/>
+                            <constraint firstItem="QyK-6t-Hcf" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="tDc-kF-32c" secondAttribute="trailing" symbolic="YES" id="mZj-dE-sfd"/>
+                            <constraint firstItem="NfP-5G-Jjs" firstAttribute="bottom" secondItem="QyK-6t-Hcf" secondAttribute="bottom" id="xev-9g-m9w"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="All Cats" image="Vector" id="PLf-7N-NH4">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdd-br-gAs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595.6521739130435" y="-334.15178571428572"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="U59-KK-24C">
+            <objects>
+                <tabBarController id="82r-EF-HhE" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6cD-mB-HoL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="54y-B0-dkb" kind="relationship" relationship="viewControllers" id="eyJ-t0-mXT"/>
+                        <segue destination="ynu-gs-5Ce" kind="relationship" relationship="viewControllers" id="KXu-WD-aM6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PCc-7a-36e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-294" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Vector" width="27" height="26"/>
+        <image name="Vector-1" width="25" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
