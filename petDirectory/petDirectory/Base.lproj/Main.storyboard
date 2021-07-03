@@ -61,6 +61,9 @@
                     <tabBarItem key="tabBarItem" title="All Cats" image="Vector" id="PLf-7N-NH4">
                         <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="tableview" destination="NfP-5G-Jjs" id="JdX-Nc-VVl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdd-br-gAs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
