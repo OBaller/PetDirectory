@@ -4,7 +4,7 @@
 //
 //  Created by apple on 02/07/2021.
 //
-
+import Kingfisher
 import UIKit
 
 class AllCatsTableViewCell: UITableViewCell {
@@ -18,5 +18,7 @@ class AllCatsTableViewCell: UITableViewCell {
     
     func setUp(with cat: CatModel) {
         catName.text = cat.name
+        catImage.kf.setImage(with: URL(string: cat.image?.url ?? ""))
+        
     }
 }
