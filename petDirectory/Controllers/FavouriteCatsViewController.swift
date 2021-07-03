@@ -13,7 +13,8 @@ class FavouriteCatsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.dataSource = self
-        
+        collectionView.delegate = self
+        collectionView.collectionViewLayout = UICollectionViewFlowLayout()
     }
     
 }
@@ -25,5 +26,17 @@ extension FavouriteCatsViewController: UICollectionViewDataSource{
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         return UICollectionViewCell()
+    }
+}
+
+extension FavouriteCatsViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Naseem")
+    }
+}
+
+extension FavouriteCatsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 200, height: 300 )
     }
 }

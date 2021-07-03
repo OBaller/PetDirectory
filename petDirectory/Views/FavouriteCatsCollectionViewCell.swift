@@ -9,7 +9,6 @@ import UIKit
 
 class FavouriteCatsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var faveCatsImageView: UIImageView!
-    
     @IBOutlet weak var faveCatNameLabel: UILabel!
 
     @IBAction func didTapFavourite(_ sender: UIButton) {
