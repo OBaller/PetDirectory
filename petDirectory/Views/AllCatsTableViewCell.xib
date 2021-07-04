@@ -16,18 +16,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="356" height="71"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2R-5N-LHa">
-                        <rect key="frame" x="315" y="24" width="21" height="22"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="22" id="CgS-SO-hCh"/>
-                            <constraint firstAttribute="width" constant="21" id="WBq-HZ-M7x"/>
-                        </constraints>
-                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <state key="normal" image="heart" catalog="system"/>
-                        <connections>
-                            <action selector="didTapFavourite:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lRI-mv-F5F"/>
-                        </connections>
-                    </button>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Vy5-zf-11O">
                         <rect key="frame" x="24" y="18" width="244" height="40"/>
                         <subviews>
@@ -60,10 +48,7 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="D2R-5N-LHa" secondAttribute="trailing" constant="20" id="1ju-b7-GUy"/>
-                    <constraint firstItem="D2R-5N-LHa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="5HM-Jk-d5L"/>
                     <constraint firstAttribute="bottom" secondItem="Vy5-zf-11O" secondAttribute="bottom" constant="37" id="GjW-f1-7xa"/>
-                    <constraint firstAttribute="bottom" secondItem="D2R-5N-LHa" secondAttribute="bottom" constant="25" id="OHb-IL-tAF"/>
                     <constraint firstItem="Vy5-zf-11O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="18" id="Uyg-g4-hGz"/>
                     <constraint firstItem="Vy5-zf-11O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="c1q-Zv-C2l"/>
                 </constraints>
@@ -78,6 +63,5 @@
     </objects>
     <resources>
         <image name="Image" width="13.333333015441895" height="13.333333015441895"/>
-        <image name="heart" catalog="system" width="128" height="109"/>
     </resources>
 </document>
