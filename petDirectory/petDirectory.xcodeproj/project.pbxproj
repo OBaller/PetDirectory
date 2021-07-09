@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,8 @@
 		1827594D268F631A00249ADC /* AllCatsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827594B268F631A00249ADC /* AllCatsTableViewCell.swift */; };
 		1827594E268F631A00249ADC /* AllCatsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1827594C268F631A00249ADC /* AllCatsTableViewCell.xib */; };
 		18275951268F688800249ADC /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18275950268F688800249ADC /* CatModel.swift */; };
+		1858A7BC26988FB00097DF61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858A7BB26988FB00097DF61 /* Constants.swift */; };
+		1858A7BE269897CC0097DF61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1858A7BD269897CC0097DF61 /* GoogleService-Info.plist */; };
 		8EDE7C0DC8DED5378F5945AC /* Pods_petDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D4366FA21C449852396E64 /* Pods_petDirectory.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		1827594B268F631A00249ADC /* AllCatsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCatsTableViewCell.swift; sourceTree = "<group>"; };
 		1827594C268F631A00249ADC /* AllCatsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllCatsTableViewCell.xib; sourceTree = "<group>"; };
 		18275950268F688800249ADC /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
+		1858A7BB26988FB00097DF61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1858A7BD269897CC0097DF61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1BF2D02C031E7F5B9DB5A3E4 /* Pods-petDirectory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petDirectory.release.xcconfig"; path = "Target Support Files/Pods-petDirectory/Pods-petDirectory.release.xcconfig"; sourceTree = "<group>"; };
 		83D4366FA21C449852396E64 /* Pods_petDirectory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_petDirectory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E6370B8885863F709D4053 /* Pods-petDirectory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petDirectory.debug.xcconfig"; path = "Target Support Files/Pods-petDirectory/Pods-petDirectory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +62,6 @@
 				F8E6370B8885863F709D4053 /* Pods-petDirectory.debug.xcconfig */,
 				1BF2D02C031E7F5B9DB5A3E4 /* Pods-petDirectory.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -92,6 +95,8 @@
 				1827593A268F574400249ADC /* Assets.xcassets */,
 				1827593C268F574400249ADC /* LaunchScreen.storyboard */,
 				1827593F268F574400249ADC /* Info.plist */,
+				1858A7BD269897CC0097DF61 /* GoogleService-Info.plist */,
+				1858A7BB26988FB00097DF61 /* Constants.swift */,
 			);
 			path = petDirectory;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			files = (
 				1827594E268F631A00249ADC /* AllCatsTableViewCell.xib in Resources */,
 				1827593E268F574400249ADC /* LaunchScreen.storyboard in Resources */,
+				1858A7BE269897CC0097DF61 /* GoogleService-Info.plist in Resources */,
 				1827593B268F574400249ADC /* Assets.xcassets in Resources */,
 				18275939268F574100249ADC /* Main.storyboard in Resources */,
 			);
@@ -253,6 +259,7 @@
 				18275934268F574100249ADC /* SceneDelegate.swift in Sources */,
 				18275947268F5D0400249ADC /* AllCatsViewController.swift in Sources */,
 				1827594D268F631A00249ADC /* AllCatsTableViewCell.swift in Sources */,
+				1858A7BC26988FB00097DF61 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

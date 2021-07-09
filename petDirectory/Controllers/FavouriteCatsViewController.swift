@@ -22,10 +22,12 @@ class FavouriteCatsViewController: UIViewController {
 extension FavouriteCatsViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 10
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FavouriteCatsCollectionViewCell.identifier, for: indexPath) as? FavouriteCatsCollectionViewCell else {return UICollectionViewCell()}
+//        cell.backgroundColor = .systemPink
+        return cell
     }
 }
 
@@ -37,6 +39,10 @@ extension FavouriteCatsViewController: UICollectionViewDelegate {
 
 extension FavouriteCatsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 300 )
+        return CGSize(width: 170, height: 300 )
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 15)
     }
 }

@@ -4,12 +4,12 @@
 //
 //  Created by apple on 02/07/2021.
 //
-
 import UIKit
 
 class AllCatsViewController: UIViewController {
    
     var catModel = cat()
+    
     
     @IBOutlet weak var tableview: UITableView!
     
@@ -18,6 +18,7 @@ class AllCatsViewController: UIViewController {
         decodeJSON()
         tableview.dataSource = self
         tableview.delegate = self
+        self.tableview.register(AllCatsTableViewCell.Nib(), forCellReuseIdentifier: AllCatsTableViewCell.identifier )
         self.tableview.register(UINib(nibName: "AllCatsTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         
         
@@ -57,10 +58,16 @@ extension AllCatsViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableview.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? AllCatsTableViewCell {
             cell.setUp(with: catModel[indexPath.row])
+            let likeButton = cell.likeButton
+            let currentRow = catModel[indexPath.row]
+            cell.favouriteButton = {
+                
+            }
             return cell
         }
        return UITableViewCell()
     }
     
+
     
 }

@@ -8,6 +8,8 @@
 import UIKit
 
 class FavouriteCatsCollectionViewCell: UICollectionViewCell {
+    static let identifier = "FavouriteCatsCollectionViewCell"
+    
     @IBOutlet weak var faveCatsImageView: UIImageView!
     @IBOutlet weak var faveCatNameLabel: UILabel!
 
