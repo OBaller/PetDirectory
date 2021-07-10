@@ -40,6 +40,7 @@ class AllCatsViewController: UIViewController {
             }
             guard let result = json else {return}
             self.catModel.append(contentsOf: result)
+            
             DispatchQueue.main.async {
                 self.tableview.reloadData()
             }
