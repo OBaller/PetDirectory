@@ -75,6 +75,11 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="200" height="306"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <outlet property="faveCatNameLabel" destination="y46-hd-moN" id="Vgs-61-csN"/>
                                             <outlet property="faveCatsImageView" destination="UU0-CS-El5" id="HGg-oq-bUi"/>
@@ -118,7 +123,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfP-5G-Jjs">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfP-5G-Jjs">
                                 <rect key="frame" x="0.0" y="112" width="414" height="701"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
