@@ -20,8 +20,19 @@
 		18275951268F688800249ADC /* CatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18275950268F688800249ADC /* CatModel.swift */; };
 		1858A7BC26988FB00097DF61 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858A7BB26988FB00097DF61 /* Constants.swift */; };
 		1858A7BE269897CC0097DF61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1858A7BD269897CC0097DF61 /* GoogleService-Info.plist */; };
+		18689514269C4B0600D83452 /* petDirectoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18689513269C4B0600D83452 /* petDirectoryTests.swift */; };
 		8EDE7C0DC8DED5378F5945AC /* Pods_petDirectory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83D4366FA21C449852396E64 /* Pods_petDirectory.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18689516269C4B0600D83452 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18275926268F574100249ADC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1827592D268F574100249ADC;
+			remoteInfo = petDirectory;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1810689E2690ACD400CA295B /* FavouriteCatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCatsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -39,6 +50,9 @@
 		18275950268F688800249ADC /* CatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatModel.swift; sourceTree = "<group>"; };
 		1858A7BB26988FB00097DF61 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1858A7BD269897CC0097DF61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18689511269C4B0600D83452 /* petDirectoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petDirectoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18689513269C4B0600D83452 /* petDirectoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petDirectoryTests.swift; sourceTree = "<group>"; };
+		18689515269C4B0600D83452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BF2D02C031E7F5B9DB5A3E4 /* Pods-petDirectory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petDirectory.release.xcconfig"; path = "Target Support Files/Pods-petDirectory/Pods-petDirectory.release.xcconfig"; sourceTree = "<group>"; };
 		83D4366FA21C449852396E64 /* Pods_petDirectory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_petDirectory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8E6370B8885863F709D4053 /* Pods-petDirectory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petDirectory.debug.xcconfig"; path = "Target Support Files/Pods-petDirectory/Pods-petDirectory.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,6 +64,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EDE7C0DC8DED5378F5945AC /* Pods_petDirectory.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868950E269C4B0600D83452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +93,7 @@
 				1827594A268F62F800249ADC /* Views */,
 				18275945268F5CD300249ADC /* Controllers */,
 				18275930268F574100249ADC /* petDirectory */,
+				18689512269C4B0600D83452 /* petDirectoryTests */,
 				1827592F268F574100249ADC /* Products */,
 				109C82C20C17C629F2CE7033 /* Pods */,
 				BD19F99E018E6DFF1F8EDBCF /* Frameworks */,
@@ -82,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1827592E268F574100249ADC /* petDirectory.app */,
+				18689511269C4B0600D83452 /* petDirectoryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +151,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		18689512269C4B0600D83452 /* petDirectoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				18689513269C4B0600D83452 /* petDirectoryTests.swift */,
+				18689515269C4B0600D83452 /* Info.plist */,
+			);
+			path = petDirectoryTests;
+			sourceTree = "<group>";
+		};
 		BD19F99E018E6DFF1F8EDBCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +190,24 @@
 			productReference = 1827592E268F574100249ADC /* petDirectory.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18689510269C4B0600D83452 /* petDirectoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1868951A269C4B0600D83452 /* Build configuration list for PBXNativeTarget "petDirectoryTests" */;
+			buildPhases = (
+				1868950D269C4B0600D83452 /* Sources */,
+				1868950E269C4B0600D83452 /* Frameworks */,
+				1868950F269C4B0600D83452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18689517269C4B0600D83452 /* PBXTargetDependency */,
+			);
+			name = petDirectoryTests;
+			productName = petDirectoryTests;
+			productReference = 18689511269C4B0600D83452 /* petDirectoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,6 +219,10 @@
 				TargetAttributes = {
 					1827592D268F574100249ADC = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					18689510269C4B0600D83452 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 1827592D268F574100249ADC;
 					};
 				};
 			};
@@ -186,6 +240,7 @@
 			projectRoot = "";
 			targets = (
 				1827592D268F574100249ADC /* petDirectory */,
+				18689510269C4B0600D83452 /* petDirectoryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,6 +255,13 @@
 				1858A7BE269897CC0097DF61 /* GoogleService-Info.plist in Resources */,
 				1827593B268F574400249ADC /* Assets.xcassets in Resources */,
 				18275939268F574100249ADC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1868950F269C4B0600D83452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +325,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1868950D269C4B0600D83452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18689514269C4B0600D83452 /* petDirectoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18689517269C4B0600D83452 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1827592D268F574100249ADC /* petDirectory */;
+			targetProxy = 18689516269C4B0600D83452 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18275937268F574100249ADC /* Main.storyboard */ = {
@@ -439,6 +517,44 @@
 			};
 			name = Release;
 		};
+		18689518269C4B0600D83452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = petDirectoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightSummit.petDirectoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/petDirectory.app/petDirectory";
+			};
+			name = Debug;
+		};
+		18689519269C4B0600D83452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = petDirectoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.brightSummit.petDirectoryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/petDirectory.app/petDirectory";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -456,6 +572,15 @@
 			buildConfigurations = (
 				18275943268F574400249ADC /* Debug */,
 				18275944268F574400249ADC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1868951A269C4B0600D83452 /* Build configuration list for PBXNativeTarget "petDirectoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18689518269C4B0600D83452 /* Debug */,
+				18689519269C4B0600D83452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

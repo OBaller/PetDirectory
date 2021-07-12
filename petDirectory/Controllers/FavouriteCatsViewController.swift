@@ -8,6 +8,7 @@
 import UIKit
 
 class FavouriteCatsViewController: UIViewController {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -26,7 +27,6 @@ extension FavouriteCatsViewController: UICollectionViewDataSource{
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FavouriteCatsCollectionViewCell.identifier, for: indexPath) as? FavouriteCatsCollectionViewCell else {return UICollectionViewCell()}
-//        cell.backgroundColor = .systemPink
         return cell
     }
 }
